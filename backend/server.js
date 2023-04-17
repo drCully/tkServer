@@ -13,7 +13,9 @@ import userRoutes from './routes/api/userRoutes.js'
 
 connectDB()
 const app = express()
+
 app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/clients', clientRoutes)
 app.use('/api/invoices', invoiceRoutes)
@@ -24,7 +26,7 @@ app.use('/api/users', userRoutes)
 // Serve frontend
 const __dirname = path.resolve()
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '/frontend/build')))
+  app.use(express.static(path.join(__dirname, '../frontend/build')))
 
   app.get('*', (req, res) =>
     res.sendFile(
