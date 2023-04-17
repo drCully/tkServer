@@ -1,0 +1,5 @@
+NODE_ENV = development
+PORT = 5000
+DATABASE_URI = mongodb://dbAdmin:HxbQMrD0o4IfKT1n@tk-server:27017/dc-timekeeper?authSource=admin&retryWrites=true&w=majority
+ACCESS_TOKEN_SECRET = beffea91b3cfb2876418b51ededf1c3ca4d8806950fe290372101347709148b442c74d1a237dfd73b024c7ecf4a6e2c874f28dc3d2b2c7e63fde518e5a315037
+REFRESH_TOKEN_SECRET = 40753eba98064e0b9e24d020bdf3abfd91da2d2023fe949c3d4dd184a056e25df34761d4f00d78f5cc3a9027be7cb73d93e74881b98f474559c85dc98c080b8a
